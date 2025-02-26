@@ -25,8 +25,8 @@ Each section bellow contains links to full details of reports produced by trivy 
    Total:  1 (UNKNOWN: 0, LOW:  1, MEDIUM:  0, HIGH:  0, CRITICAL: 0) - Python (python-pkg) - SecurityWorld 13.6.5
    Total:  7 (UNKNOWN: 0, LOW:  0, MEDIUM:  5, HIGH:  1, CRITICAL: 1) - opt/nfast/bin/ncssh (gobinary) - SecurityWorld 13.6.5
    ```
-4. Critical vulnerabity in file `opt/nfast/bin/ncssh` can be resolved by deleting it. It is needed for [HardServer](https://nshielddocs.entrust.com/security-world-docs/v13.6.5/utilities/ncssh.html) and EJBCA it should be irelevant. But not that after upgrade `nshield-hwsp` this problem will arise again.
-5. I've no clue why Entrust did put some SSH keys into SecurityWorld 13.6.5
+4. Critical vulnerabity in file `opt/nfast/bin/ncssh` can be resolved by deleting it. It is needed for [HardServer](https://nshielddocs.entrust.com/security-world-docs/v13.6.5/utilities/ncssh.html) and for EJBCA it should be irelevant. But not that after upgrade `nshield-hwsp` this problem will arise again.
+5. I've no clue why Entrust did put some SSH keys into SecurityWorld 13.6.5. I've failed to delete them from images.
 
 ## harbor.3key.company/ejbca-3key/ejbca-3key:9.2.0-1.0.5-nshield-12.81.2
 ```
