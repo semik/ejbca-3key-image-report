@@ -1,0 +1,293 @@
+2025-02-26T16:18:45+01:00	INFO	[vuln] Vulnerability scanning is enabled
+2025-02-26T16:18:45+01:00	INFO	[secret] Secret scanning is enabled
+2025-02-26T16:18:45+01:00	INFO	[secret] If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2025-02-26T16:18:45+01:00	INFO	[secret] Please see also https://aquasecurity.github.io/trivy/v0.59/docs/scanner/secret#recommendation for faster secret detection
+2025-02-26T16:18:45+01:00	INFO	Detected OS	family="ubuntu" version="24.04"
+2025-02-26T16:18:45+01:00	INFO	[ubuntu] Detecting vulnerabilities...	os_version="24.04" pkg_num=137
+2025-02-26T16:18:45+01:00	INFO	Number of language-specific files	num=2
+2025-02-26T16:18:45+01:00	INFO	[python-pkg] Detecting vulnerabilities...
+2025-02-26T16:18:45+01:00	INFO	[jar] Detecting vulnerabilities...
+
+harbor.3key.company/ejbca-3key/ejbca-3key:ejbca-9.2.0-wildfly-35.0.0-semik4-13.6.5-HOTFIX (ubuntu 24.04)
+========================================================================================================
+Total: 49 (UNKNOWN: 0, LOW: 30, MEDIUM: 19, HIGH: 0, CRITICAL: 0)
+
+┌────────────────────┬────────────────┬──────────┬──────────┬─────────────────────────┬─────────────────────────┬──────────────────────────────────────────────────────────────┐
+│      Library       │ Vulnerability  │ Severity │  Status  │    Installed Version    │      Fixed Version      │                            Title                             │
+├────────────────────┼────────────────┼──────────┼──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ coreutils          │ CVE-2016-2781  │ LOW      │ affected │ 9.4-3ubuntu6            │                         │ coreutils: Non-privileged session can escape to the parent   │
+│                    │                │          │          │                         │                         │ session in chroot                                            │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2016-2781                    │
+├────────────────────┼────────────────┤          │          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ curl               │ CVE-2025-0167  │          │          │ 8.5.0-2ubuntu10.6       │                         │ When asked to use a `.netrc` file for credentials **and** to │
+│                    │                │          │          │                         │                         │ follow...                                                    │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2025-0167                    │
+├────────────────────┼────────────────┤          │          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ dirmngr            │ CVE-2022-3219  │          │          │ 2.4.4-2ubuntu17         │                         │ gnupg: denial of service issue (resource consumption) using  │
+│                    │                │          │          │                         │                         │ compressed packets                                           │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ gnupg              │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ gnupg-utils        │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ gpg                │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ gpg-agent          │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ gpgconf            │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ gpgsm              │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ gpgv               │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ keyboxd            │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┼────────────────┤          │          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libc-bin           │ CVE-2016-20013 │          │          │ 2.39-0ubuntu8.4         │                         │ sha256crypt and sha512crypt through 0.6 allow attackers to   │
+│                    │                │          │          │                         │                         │ cause a denial of...                                         │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2016-20013                   │
+├────────────────────┤                │          │          │                         ├─────────────────────────┤                                                              │
+│ libc6              │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+│                    │                │          │          │                         │                         │                                                              │
+├────────────────────┼────────────────┼──────────┼──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libcap2            │ CVE-2025-1390  │ MEDIUM   │ fixed    │ 1:2.66-5ubuntu2.1       │ 1:2.66-5ubuntu2.2       │ libcap: pam_cap: Fix potential configuration parsing error   │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2025-1390                    │
+├────────────────────┼────────────────┼──────────┼──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libcurl4t64        │ CVE-2025-0167  │ LOW      │ affected │ 8.5.0-2ubuntu10.6       │                         │ When asked to use a `.netrc` file for credentials **and** to │
+│                    │                │          │          │                         │                         │ follow...                                                    │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2025-0167                    │
+├────────────────────┼────────────────┼──────────┤          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libfreetype6       │ CVE-2025-23022 │ MEDIUM   │          │ 2.13.2+dfsg-1build3     │                         │ freetype: signed integer overflow in cf2_doFlex              │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2025-23022                   │
+├────────────────────┼────────────────┼──────────┤          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcrypt20        │ CVE-2024-2236  │ LOW      │          │ 1.10.3-2build1          │                         │ libgcrypt: vulnerable to Marvin Attack                       │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-2236                    │
+├────────────────────┼────────────────┼──────────┼──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgnutls30t64     │ CVE-2024-12243 │ MEDIUM   │ fixed    │ 3.8.3-1.1ubuntu3.2      │ 3.8.3-1.1ubuntu3.3      │ gnutls: GnuTLS Impacted by Inefficient DER Decoding in       │
+│                    │                │          │          │                         │                         │ libtasn1 Leading to Remote...                                │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-12243                   │
+├────────────────────┼────────────────┤          ├──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgssapi-krb5-2   │ CVE-2024-26462 │          │ affected │ 1.20.1-6ubuntu2.4       │                         │ krb5: Memory leak at /krb5/src/kdc/ndr.c                     │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26462                   │
+│                    ├────────────────┼──────────┤          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-26458 │ LOW      │          │                         │                         │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26458                   │
+│                    ├────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-26461 │          │          │                         │                         │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c    │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26461                   │
+├────────────────────┼────────────────┼──────────┤          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libk5crypto3       │ CVE-2024-26462 │ MEDIUM   │          │                         │                         │ krb5: Memory leak at /krb5/src/kdc/ndr.c                     │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26462                   │
+│                    ├────────────────┼──────────┤          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-26458 │ LOW      │          │                         │                         │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26458                   │
+│                    ├────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-26461 │          │          │                         │                         │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c    │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26461                   │
+├────────────────────┼────────────────┼──────────┤          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libkrb5-3          │ CVE-2024-26462 │ MEDIUM   │          │                         │                         │ krb5: Memory leak at /krb5/src/kdc/ndr.c                     │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26462                   │
+│                    ├────────────────┼──────────┤          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-26458 │ LOW      │          │                         │                         │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26458                   │
+│                    ├────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-26461 │          │          │                         │                         │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c    │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26461                   │
+├────────────────────┼────────────────┼──────────┤          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libkrb5support0    │ CVE-2024-26462 │ MEDIUM   │          │                         │                         │ krb5: Memory leak at /krb5/src/kdc/ndr.c                     │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26462                   │
+│                    ├────────────────┼──────────┤          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-26458 │ LOW      │          │                         │                         │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26458                   │
+│                    ├────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-26461 │          │          │                         │                         │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c    │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-26461                   │
+├────────────────────┼────────────────┼──────────┤          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam-modules     │ CVE-2024-10041 │ MEDIUM   │          │ 1.5.3-5ubuntu5.1        │                         │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                    ├────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-10963 │          │          │                         │                         │ pam: Improper Hostname Interpretation in pam_access Leads to │
+│                    │                │          │          │                         │                         │ Access Control Bypass                                        │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-10963                   │
+├────────────────────┼────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam-modules-bin │ CVE-2024-10041 │          │          │                         │                         │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                    ├────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-10963 │          │          │                         │                         │ pam: Improper Hostname Interpretation in pam_access Leads to │
+│                    │                │          │          │                         │                         │ Access Control Bypass                                        │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-10963                   │
+├────────────────────┼────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam-runtime     │ CVE-2024-10041 │          │          │                         │                         │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                    ├────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-10963 │          │          │                         │                         │ pam: Improper Hostname Interpretation in pam_access Leads to │
+│                    │                │          │          │                         │                         │ Access Control Bypass                                        │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-10963                   │
+├────────────────────┼────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam0g           │ CVE-2024-10041 │          │          │                         │                         │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                    ├────────────────┤          │          │                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-10963 │          │          │                         │                         │ pam: Improper Hostname Interpretation in pam_access Leads to │
+│                    │                │          │          │                         │                         │ Access Control Bypass                                        │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-10963                   │
+├────────────────────┼────────────────┼──────────┼──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libssl3t64         │ CVE-2024-13176 │ LOW      │ fixed    │ 3.0.13-0ubuntu3.4       │ 3.0.13-0ubuntu3.5       │ openssl: Timing side-channel in ECDSA signature computation  │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-13176                   │
+│                    ├────────────────┤          ├──────────┤                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-41996 │          │ affected │                         │                         │ openssl: remote attackers (from the client side) to trigger  │
+│                    │                │          │          │                         │                         │ unnecessarily expensive server-side...                       │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-41996                   │
+│                    ├────────────────┤          ├──────────┤                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-9143  │          │ fixed    │                         │ 3.0.13-0ubuntu3.5       │ openssl: Low-level invalid GF(2^m) parameters lead to OOB    │
+│                    │                │          │          │                         │                         │ memory access                                                │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-9143                    │
+├────────────────────┼────────────────┼──────────┤          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libtasn1-6         │ CVE-2024-12133 │ MEDIUM   │          │ 4.19.0-3build1          │ 4.19.0-3ubuntu0.24.04.1 │ libtasn1: Inefficient DER Decoding in libtasn1 Leading to    │
+│                    │                │          │          │                         │                         │ Potential Remote DoS                                         │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-12133                   │
+├────────────────────┼────────────────┼──────────┼──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ locales            │ CVE-2016-20013 │ LOW      │ affected │ 2.39-0ubuntu8.4         │                         │ sha256crypt and sha512crypt through 0.6 allow attackers to   │
+│                    │                │          │          │                         │                         │ cause a denial of...                                         │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2016-20013                   │
+├────────────────────┼────────────────┼──────────┤          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ login              │ CVE-2024-56433 │ MEDIUM   │          │ 1:4.13+dfsg1-4ubuntu3.2 │                         │ shadow-utils: Default subordinate ID configuration in        │
+│                    │                │          │          │                         │                         │ /etc/login.defs could lead to compromise                     │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+├────────────────────┼────────────────┼──────────┼──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl            │ CVE-2024-13176 │ LOW      │ fixed    │ 3.0.13-0ubuntu3.4       │ 3.0.13-0ubuntu3.5       │ openssl: Timing side-channel in ECDSA signature computation  │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-13176                   │
+│                    ├────────────────┤          ├──────────┤                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-41996 │          │ affected │                         │                         │ openssl: remote attackers (from the client side) to trigger  │
+│                    │                │          │          │                         │                         │ unnecessarily expensive server-side...                       │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-41996                   │
+│                    ├────────────────┤          ├──────────┤                         ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-9143  │          │ fixed    │                         │ 3.0.13-0ubuntu3.5       │ openssl: Low-level invalid GF(2^m) parameters lead to OOB    │
+│                    │                │          │          │                         │                         │ memory access                                                │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-9143                    │
+├────────────────────┼────────────────┼──────────┼──────────┼─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ passwd             │ CVE-2024-56433 │ MEDIUM   │ affected │ 1:4.13+dfsg1-4ubuntu3.2 │                         │ shadow-utils: Default subordinate ID configuration in        │
+│                    │                │          │          │                         │                         │ /etc/login.defs could lead to compromise                     │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+├────────────────────┼────────────────┤          │          ├─────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ wget               │ CVE-2021-31879 │          │          │ 1.21.4-1ubuntu4.1       │                         │ wget: authorization header disclosure on redirect            │
+│                    │                │          │          │                         │                         │ https://avd.aquasec.com/nvd/cve-2021-31879                   │
+└────────────────────┴────────────────┴──────────┴──────────┴─────────────────────────┴─────────────────────────┴──────────────────────────────────────────────────────────────┘
+2025-02-26T16:18:46+01:00	INFO	Table result includes only package filenames. Use '--format json' option to get the full path to the package file.
+
+Java (jar)
+==========
+Total: 13 (UNKNOWN: 0, LOW: 0, MEDIUM: 5, HIGH: 8, CRITICAL: 0)
+
+┌──────────────────────────────────────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬────────────────────────────┬─────────────────────────────────────────────────────────────┐
+│                         Library                          │ Vulnerability  │ Severity │ Status │ Installed Version │       Fixed Version        │                            Title                            │
+├──────────────────────────────────────────────────────────┼────────────────┼──────────┼────────┼───────────────────┼────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ commons-io:commons-io (velocity-engine-core-2.3.jar)     │ CVE-2024-47554 │ HIGH     │ fixed  │ 2.8.0             │ 2.14.0                     │ apache-commons-io: Possible denial of service attack on     │
+│                                                          │                │          │        │                   │                            │ untrusted input to XmlStreamReader                          │
+│                                                          │                │          │        │                   │                            │ https://avd.aquasec.com/nvd/cve-2024-47554                  │
+├──────────────────────────────────────────────────────────┼────────────────┼──────────┤        ├───────────────────┼────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ io.netty:netty-common (jboss-client.jar)                 │ CVE-2025-25193 │ MEDIUM   │        │ 4.1.116.Final     │ 4.1.118.Final              │ Denial of Service attack on windows app using Netty         │
+│                                                          │                │          │        │                   │                            │ https://avd.aquasec.com/nvd/cve-2025-25193                  │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+├──────────────────────────────────────────────────────────┤                │          │        │                   │                            │                                                             │
+│ io.netty:netty-common (netty-common-4.1.116.Final.jar)   │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+├──────────────────────────────────────────────────────────┼────────────────┼──────────┤        │                   │                            ├─────────────────────────────────────────────────────────────┤
+│ io.netty:netty-handler (jboss-client.jar)                │ CVE-2025-24970 │ HIGH     │        │                   │                            │ io.netty:netty-handler: SslHandler doesn't correctly        │
+│                                                          │                │          │        │                   │                            │ validate packets which can lead to native crash...          │
+│                                                          │                │          │        │                   │                            │ https://avd.aquasec.com/nvd/cve-2025-24970                  │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+├──────────────────────────────────────────────────────────┤                │          │        │                   │                            │                                                             │
+│ io.netty:netty-handler (netty-handler-4.1.116.Final.jar) │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+├──────────────────────────────────────────────────────────┼────────────────┤          │        ├───────────────────┼────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ org.apache.cxf:cxf-core (cxf-core-4.0.5.jar)             │ CVE-2025-23184 │          │        │ 4.0.5             │ 3.5.10, 3.6.5, 4.0.6       │ org.apache.cxf: Apache CXF: Denial of Service vulnerability │
+│                                                          │                │          │        │                   │                            │ with temporary files                                        │
+│                                                          │                │          │        │                   │                            │ https://avd.aquasec.com/nvd/cve-2025-23184                  │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+│                                                          │                │          │        │                   │                            │                                                             │
+├──────────────────────────────────────────────────────────┼────────────────┼──────────┤        ├───────────────────┼────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ org.wildfly.core:wildfly-server                          │ CVE-2025-23367 │ MEDIUM   │        │ 27.0.0.Final      │ 27.0.1.Final, 28.0.0.Beta2 │ org.wildfly.core:wildfly-server: Wildfly improper RBAC      │
+│ (wildfly-server-27.0.0.Final.jar)                        │                │          │        │                   │                            │ permission                                                  │
+│                                                          │                │          │        │                   │                            │ https://avd.aquasec.com/nvd/cve-2025-23367                  │
+└──────────────────────────────────────────────────────────┴────────────────┴──────────┴────────┴───────────────────┴────────────────────────────┴─────────────────────────────────────────────────────────────┘
+2025-02-26T16:18:46+01:00	INFO	Table result includes only package filenames. Use '--format json' option to get the full path to the package file.
+
+Python (python-pkg)
+===================
+Total: 1 (UNKNOWN: 0, LOW: 1, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+
+┌─────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────┐
+│         Library         │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                          Title                           │
+├─────────────────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
+│ cryptography (METADATA) │ CVE-2024-12797 │ LOW      │ fixed  │ 43.0.1            │ 44.0.1        │ openssl: RFC7250 handshakes with unauthenticated servers │
+│                         │                │          │        │                   │               │ don't abort as expected                                  │
+│                         │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-12797               │
+└─────────────────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────┘
+
+/opt/nfast/python3/lib/python3.11/site-packages/nshield/hsmadmin/default_keys/sshadmin_id_ecdsa (secrets)
+=========================================================================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
+
+HIGH: AsymmetricPrivateKey (private-key)
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Asymmetric Private Key
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ /opt/nfast/python3/lib/python3.11/site-packages/nshield/hsmadmin/default_keys/sshadmin_id_ecdsa:1 (added by 'COPY --chown=czertainly opt /opt # build')
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 [ -----BEGIN EC PRIVATE KEY-----******************************************************************************************************************************************************************************************************************************************************************************************************************-----END EC PRIVATE 
+   2   
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+/opt/nfast/python3/nshield.hsmadmin/sshadmin_id_ecdsa (secrets)
+===============================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
+
+HIGH: AsymmetricPrivateKey (private-key)
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Asymmetric Private Key
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ /opt/nfast/python3/nshield.hsmadmin/sshadmin_id_ecdsa:1 (added by 'COPY --chown=czertainly opt /opt # build')
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 [ -----BEGIN EC PRIVATE KEY-----******************************************************************************************************************************************************************************************************************************************************************************************************************-----END EC PRIVATE 
+   2   
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
